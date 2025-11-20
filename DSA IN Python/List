@@ -1,0 +1,19 @@
+fruits = ["apple", "banana", "mango", "orange", "grape"]
+
+print("Original list:", fruits)
+
+fruits.append("pineapple")
+print("After append:", fruits)
+
+fruits.insert(2, "kiwi")
+print("After insert:", fruits)
+
+fruits.remove("banana")
+print("After remove:", fruits)
+
+print("Fruits in reverse order:", fruits[::-1])
+
+print("Total fruits:", len(fruits))
+
+for fruit in fruits:
+    print(fruit)
