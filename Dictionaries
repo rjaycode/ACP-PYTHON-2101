@@ -1,0 +1,22 @@
+student = {
+    "name": "Alice",
+    "age": 19,
+    "course": "IT"
+}
+
+print("Name:", student["name"])
+print("Age:", student.get("age"))
+print("Course:", student["course"])
+
+student["age"] = 20
+student["grade"] = "A"
+
+print("Updated Dictionary:", student)
+
+student.pop("course")
+del student["grade"]
+
+print("After Removals:", student)
+
+for key, value in student.items():
+    print(key, ":", value)
