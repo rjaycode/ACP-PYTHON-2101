@@ -1,1 +1,11 @@
+class InkPrinter:
+    def print_document(self):
+        return "Ink Printer: Printing with ink..."
 
+class LaserPrinter:
+    def print_document(self):
+        return "Laser Printer: Printing with toner..."
+
+printers = [InkPrinter(), LaserPrinter()]
+for p in printers:
+    print(p.print_document())
