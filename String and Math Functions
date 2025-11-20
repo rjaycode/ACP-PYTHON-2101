@@ -1,0 +1,15 @@
+import math
+
+text = input("Enter a string: ")
+num = float(input("Enter a number: "))
+
+print("Uppercase:", text.upper())
+print("Lowercase:", text.lower())
+print("Length:", len(text))
+print("Reversed:", text[::-1])
+
+print("Square root:", math.sqrt(num))
+print("Power (num^2):", math.pow(num, 2))
+print("Ceiling:", math.ceil(num))
+print("Floor:", math.floor(num))
+print("Absolute value:", abs(num))
