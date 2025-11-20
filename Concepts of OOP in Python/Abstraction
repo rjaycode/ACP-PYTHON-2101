@@ -1,1 +1,27 @@
+from abc import ABC, abstractmethod
 
+class Employee(ABC):
+    @abstractmethod
+    def calculate_pay(self):
+        pass
+
+class HourlyEmployee(Employee):
+    def __init__(self, hours, rate):
+        self.hours = hours
+        self.rate = rate
+
+    def calculate_pay(self):
+        return self.hours * self.rate
+
+class SalariedEmployee(Employee):
+    def __init__(self, monthly_salary):
+        self.monthly_salary = monthly_salary
+
+    def calculate_pay(self):
+        return self.monthly_salary
+
+emp1 = HourlyEmployee(40, 150)
+emp2 = SalariedEmployee(30000)
+
+print(emp1.calculate_pay())
+print(emp2.calculate_pay())
